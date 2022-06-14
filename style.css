@@ -1,0 +1,269 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+::root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* Nav Logo and image */
+
+#logo{
+    margin:  10px 34px ;
+  
+  
+  }
+  
+  #logo img{
+       height: 100px;
+       margin: -34px 6px;
+  }
+
+/*Nav List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 22px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.4s ease;
+ }
+
+ #navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    display: block;
+   
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 789px;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+
+#home::before{
+    content:"";
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/IMAGES/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+} 
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Great vibes,sans;
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 23px 6px;
+    border-radius: 30px;
+    background: #f2f2f2;
+}
+
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: Saira Condensed,sans-serif;
+    font-size: 1.2rem;
+}
+/* client section */
+#clients-section{
+    position: relative;
+    
+}
+
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url("/IMAGES/bg11.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+   
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 40px;
+}
+
+#clients img{
+    height: 136px;
+}
+
+/* Contact section */
+#contact{
+    position:relative;
+    color: #fff;
+    font-size: 24px;
+    
+}
+
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../IMAGES/contact\ us.png') no-repeat center center/cover ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 11px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+    
+
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Josefin Sans,sans-serif;
+    color: #fff;
+    
+}
+
+
+
+footer{
+    background: rgb(3, 3, 3);
+    color: #fff;
+    padding: 9px 20px;
+
+}
+
+
+/* utility classes */
+.h-primary{
+    font-size: 3.4rem;
+    padding: 12px;
+    font-family: Josefin Sans,sans-serif
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: Saira Condensed,sans-serif
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: offwhite;
+    margin: 58px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.btn:hover{
+    background-color: rgba(2, 2, 2, 0.412);
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.Location{
+    font-size: 18px;
+    font-weight: 620;
+    padding-bottom: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
